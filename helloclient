@@ -1,0 +1,10 @@
+import socket              
+
+s = socket.socket()        
+host = socket.gethostname() 
+port = 8111                
+
+s.connect((host, port))
+s.send('hello world from client')
+print s.recv(1024)
+s.close          
