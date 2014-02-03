@@ -1,6 +1,6 @@
 def fib(n):    # write Fibonacci series up to n
     a, b = 0, 1
-    while b < n:
+    while b < n: #Checking condition
         print b,
         a, b = b, a+b
 
